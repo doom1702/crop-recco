@@ -1,0 +1,14 @@
+{% extends 'base.html '%}
+
+{% block title %} loginpage {% endblock title %}
+
+{% block body %}
+<h1 style="text-align: center; padding: 10px; margin: 10px;">Login Account</h1>
+<div class="container">
+    <form method="POST">
+            {% csrf_token %}
+        {{form.as_p}}
+        <button>Login</button>
+    </form>
+</div>
+{% endblock body %}

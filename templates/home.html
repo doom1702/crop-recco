@@ -1,0 +1,48 @@
+{% extends 'base.html '%}
+
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1511735643442-503bb3bd348a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNyb3BzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=1000" height="700px" width="1400px" alt="error">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>About Us</h5>
+                  <p>This is a crop Reccomendations Website which is very useful to farmers </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1601975940349-bc1ae79adb5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNyb3BzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=1000" class="d-block w-100" height="700px" alt="error">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>How it Works</h5>
+                  <p>User has to first do register in the wedsite and do login. After that user has to fill the input page which will ask some question and after that it will provide with the output page.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1472313420546-a46e561861d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGNyb3BzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=1000" class="d-block w-100" height="700px" alt="error">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Contact Us</h5>
+                  <p>Phone: 7039743157
+                      Email: brijeshgami07@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+{% endblock body %}

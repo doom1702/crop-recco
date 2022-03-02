@@ -1,0 +1,15 @@
+{% extends 'base.html '%}
+
+{% block title %} registpage {% endblock title %}
+
+{% block body %}
+  <h1 style="text-align: center; padding: 10px; margin: 20px;">Registration page</h1>
+  <div class="container">
+  <form method="POST">
+        {% csrf_token %}
+      {{form.as_p}}
+      <button>Register</button>
+  </form>
+
+</div>
+{% endblock body %}
