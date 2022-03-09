@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6rey#co8n@oa4dyq(dxbujc2ngr#_(jy@t(-==luh1vt*sciwm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["crop-recco.herokuapp.com","127.0.0.1"]
 
@@ -32,7 +32,6 @@ ALLOWED_HOSTS = ["crop-recco.herokuapp.com","127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
