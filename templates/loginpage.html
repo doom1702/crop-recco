@@ -5,10 +5,30 @@
 {% block body %}
 <h1 style="text-align: center; padding: 10px; margin: 10px;">Login Account</h1>
 <div class="container">
-    <form method="POST">
+    <div style="
+    width: 350px;
+    height: 15rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;">
+        <form  method="POST">
             {% csrf_token %}
-        {{form.as_p}}
-        <button>Login</button>
-    </form>
+            <div class="form-group">
+                {{form.as_p}}
+            </div>
+            
+            <div class="d-flex justify-content-center">
+                <button
+                  type="submit"
+                  class="btn btn-info"
+                  style="color: black; font-weight: bold; width: 130px; height:50px; border-radius:12px; font-size: 21px;"
+                >
+                  Login
+                </button>
+              </div>
+        </form>
+    </div>
+    
 </div>
 {% endblock body %}

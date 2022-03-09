@@ -1,0 +1,1 @@
+web: gunicorn croprecco.wsgi --log-file -
