@@ -1,7 +1,8 @@
 {% comment %} {% extends 'base.html '%} {% endcomment %}
-
-{% block title %} output {% endblock title %}
-
+{% include 'header.html' %}
+<head>
+  <title>Output</title>
+</head>
 {% block content %}
 <style>
     .mt-0 {
@@ -20,3 +21,4 @@
     </div>
   </div>
 {% endblock content %}
+{% include 'footer.html' %}

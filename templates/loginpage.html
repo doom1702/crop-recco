@@ -1,7 +1,9 @@
-{% extends 'base.html '%} 
+{% comment %} {% extends 'base.html '%}  {% endcomment %}
 
-{% block title %} loginpage {% endblock title %}
-
+{% include 'header.html' %}
+<head>
+  <title>Login</title>
+</head>
 {% block content %}
 <h1 style="text-align: center; padding: 10px; margin: 10px;">Login Account</h1>
 <div class="container">
@@ -32,3 +34,4 @@
     
 </div>
 {% endblock content %}
+{% include 'footer.html' %}
